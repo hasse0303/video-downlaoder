@@ -1,0 +1,23 @@
+<div class="body">
+  <h1 style="text-align: center;">Free Video Downloader</h1>
+  <div class="con-downloader" [formGroup]='form'>
+    <input type="text"  formControlName="linkVideo" placeholder="Paste link video here...">
+    <button class="search" (click)="search()">Search</button>
+  </div>
+
+  <div class="detail" *ngIf="videoData">
+    <div class="img">
+      <img src="{{videoData.info.thub}}" alt="">
+    </div>
+    <div class="title">
+      <h3>{{videoData.info.title}}</h3>
+      <p>{{videoData.info.duration}}</p>
+      <select>
+        <option id="re" *ngFor="let resolution of videoData.links">
+          {{resolution.format}} | {{resolution.quality}}
+        </option>
+      </select>
+      <button>Download</button>
+    </div>
+  </div>
+</div>

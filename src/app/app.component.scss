@@ -1,0 +1,46 @@
+.body{
+  width: 900px;
+  margin: 0 auto;
+}
+.con-downloader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  padding: 10px;
+  width: 550px;
+  border: 3px solid greenyellow;
+  outline: none;
+  font-size: 15px;
+}
+.search{
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: lightcoral;
+  font-weight: bold;
+}
+.detail{
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  .img{
+    width: 272px;
+    height: 155px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .title{
+    // width: 100%;
+    padding-left: 20px;
+    height: 200px;
+  }
+}
